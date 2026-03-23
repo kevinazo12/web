@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Rio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .list-group-item {
+            width: 50px;
+            text-align: center;
+        }
+        .list-group-item:hover {
+            background-color: #B22222 !important; 
+            color: #FFD700 !important;  
+        }
+        .card-pizza {
+            transition: transform 0.3s;
+            background-color: #B22222;
+            border-radius: 15px;
+        }
+        .card-pizza:hover {
+            transform: scale(1.05);
+        }
+        .svg-hero path {
+            fill: #B22222;
+        }
+    </style>
+</head>
+<body style="background-color: #FFD700;">
+
+    <!-- Barra lateral redes sociales -->
+    <div class="position-fixed start-0 top-50 translate-middle-y" style="background-color: #B22222; z-index: 1030; border-radius: 0 10px 10px 0;">
+        <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item" style="background-color: #B22222; color: #FFD700; border: none;"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="list-group-item" style="background-color: #B22222; color: #FFD700; border: none;"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="list-group-item" style="background-color: #B22222; color: #FFD700; border: none;"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="list-group-item" style="background-color: #B22222; color: #FFD700; border: none;"><i class="bi bi-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- HEADER con navbar -->
+    <header>
+        <div style="background-color: #B22222;">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <span class="navbar-brand" style="color: #FFD700; font-weight: bold; font-size: 24px;">🍕 Pizzas Río</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #FFD700;">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html" style="color: #FFD700;">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="galeria.html" style="color: #FFD700;">Galería</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" style="color: #FFD700;">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" style="color: #FFD700;">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Sección hero -->
+        <div class="container py-5 text-center">
+            <h1 class="display-3 fw-bold" style="color: #B22222;">PIZZERIA RIO</h1>
+            <h3 class="mb-4" style="color: #B22222;">El verdadero sabor de la altura</h3>
+            <a href="#" class="btn btn-lg" style="background-color: #B22222; color: #FFD700;">Ver Promociones</a>
+        </div>
+
+        <!-- SVG Wave -->
+        <div class="svg-hero" style="height: 80px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #B22222;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HISTORIA -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4" style="color: #B22222;">Nuestra Historia</h1>
+            <h3 class="mb-3" style="color: #B22222;">Desde 2010 en La Paz</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p style="color: #B22222; font-size: 1.1rem;">En Pizzeria Rio fusionamos tradición y frescura en cada rebanada. Con masas de larga fermentación e ingredientes de primera, horneamos pizzas artesanales diseñadas para conquistar tu paladar y convertir cada bocado en un momento inolvidable.</p>
+                    <p style="color: #B22222;">Todo comenzó con un sueño: traer a La Paz el auténtico sabor de la pizza italiana, pero con un toque boliviano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <section class="py-5" style="background-color: #B22222;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 style="color: #FFD700;">Nuestras Especialidades</h2>
+                <h5 style="color: #FFD700;">Elegí la que más te guste</h5>
+            </div>
+            <div class="row g-4">
+                <!-- Pizza 1 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card-pizza p-3 text-center" style="background-color: #FFD700;">
+                        <img src="https://i.ibb.co/xbrS7m2/download.jpg" class="img-fluid rounded" style="height:200px; width:100%; object-fit: cover;">
+                        <h5 class="mt-3" style="color: #B22222;">Pizza Hawaiana</h5>
+                        <p style="color: #B22222;">Jamón, Piña, Mozzarella</p>
+                        <button class="btn" style="background-color: #B22222; color: #FFD700;">Ordenar</button>
+                    </div>
+                </div>
+                <!-- Pizza 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card-pizza p-3 text-center" style="background-color: #FFD700;">
+                        <img src="https://i.ibb.co/9mhfvr4t/images.jpg" class="img-fluid rounded" style="height:200px; width:100%; object-fit: cover;">
+                        <h5 class="mt-3" style="color: #B22222;">Pizza Mixta</h5>
+                        <p style="color: #B22222;">Jamón, Orégano, Mozzarella</p>
+                        <button class="btn" style="background-color: #B22222; color: #FFD700;">Ordenar</button>
+                    </div>
+                </div>
+                <!-- Pizza 3 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card-pizza p-3 text-center" style="background-color: #FFD700;">
+                        <img src="https://i.ibb.co/nNP3dJnY/download.jpg" class="img-fluid rounded" style="height:200px; width:100%; object-fit: cover;">
+                        <h5 class="mt-3" style="color: #B22222;">Pizza 4 Quesos</h5>
+                        <p style="color: #B22222;">Mozzarella, Queso azul, Parmesano, Ricota</p>
+                        <button class="btn" style="background-color: #B22222; color: #FFD700;">Ordenar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #B22222;">Visítanos o pide a domicilio</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="p-4 text-center" style="border: 3px solid #B22222; border-radius: 15px;">
+                        <i class="bi bi-clock fs-1" style="color: #B22222;"></i>
+                        <h5 class="mt-3" style="color: #B22222;">Horario</h5>
+                        <p style="color: #B22222;">Lun-Vie: 18:00 - 23:00<br>Sáb-Dom: 12:00 - 23:00</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="p-4 text-center" style="border: 3px solid #B22222; border-radius: 15px;">
+                        <i class="bi bi-truck fs-1" style="color: #B22222;"></i>
+                        <h5 class="mt-3" style="color: #B22222;">Delivery</h5>
+                        <p style="color: #B22222;">3488782<br>Sopocachi, Miraflores, Centro</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="p-4 text-center" style="border: 3px solid #B22222; border-radius: 15px;">
+                        <i class="bi bi-star fs-1" style="color: #B22222;"></i>
+                        <h5 class="mt-3" style="color: #B22222;">Promo</h5>
+                        <p style="color: #B22222;">2x1 en pizzas<br>Lun a Mié</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="py-5" style="background-color: #B22222;">
+        <div class="container">
+            <h1 class="text-center mb-5" style="color: #FFD700;">Contacto</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div style="color: #FFD700;">
+                        <h4><i class="bi bi-geo-alt"></i> Dirección</h4>
+                        <p>Av. Busch 123, Sopocachi</p>
+                        <h4><i class="bi bi-envelope"></i> Email</h4>
+                        <p>pizzarioo@email.com</p>
+                        <h4><i class="bi bi-telephone"></i> Teléfono</h4>
+                        <p>+3488782</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <input class="form-control mb-3" placeholder="Tu Nombre" type="text" style="border: 2px solid #FFD700;">
+                        <input class="form-control mb-3" placeholder="Tu Email" type="email" style="border: 2px solid #FFD700;">
+                        <textarea class="form-control mb-3" placeholder="Tu Mensaje" rows="5" style="border: 2px solid #FFD700;"></textarea>
+                        <button class="btn" style="background-color: #FFD700; color: #B22222;">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4" style="background-color: #B22222; border-top: 5px solid #FFD700;">
+        <div class="container">
+            <p style="color: #FFD700;">&copy; 2026 Pizzas Río - El sabor de la altura</p>
+            <p style="color: #FFD700;">📍 La Paz - Bolivia | 📞 3488782</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

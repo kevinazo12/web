@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Michelline</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .rosa { color: #FFB6C1; }
+        .bg-rosa { background-color: #FFB6C1; }
+        .hover-rosa:hover { background-color: #FFB6C1; color: white; }
+        .linea-rosa { background-color: #FFB6C1; height: 10px; width: 100%; }
+        .social-btn { background-color: #FFB6C1; color: white; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        .social-menu { position: fixed; bottom: 80px; right: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); display: none; }
+        .social-menu.show { display: block; }
+        .social-menu a { display: block; padding: 10px 20px; text-decoration: none; color: #333; }
+        .social-menu a:hover { background: #FFB6C1; color: white; }
+        .whatsapp { color: #25D366; } .facebook { color: #1877F2; } .instagram { color: #E4405F; } .twitter { color: #1DA1F2; } .youtube { color: #FF0000; }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid p-0">
+
+    <!-- LOGO -->
+    <div class="text-center my-3">
+        <img src="https://i.ibb.co/4wqZrKF7/logo.png" class="img-fluid">
+    </div>
+
+    <!-- LÍNEA ROSA -->
+    <div class="d-flex justify-content-center">
+        <div class="linea-rosa" style="max-width:900px;"></div>
+    </div>
+
+    <!-- MENÚ PRINCIPAL (original, solo con clases Bootstrap) -->
+    <div class="bg-rosa py-2 mt-3">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="INDEX1.html" class="nav-link text-white">Menú Principal</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Porque Comprar</a></li>
+                <li class="nav-item"><a href="GALERIA1.html" class="nav-link text-white">Galeria</a></li>
+                <li class="nav-item"><a href="CONTACTOS1.html" class="nav-link text-white">Contacto Michelline</a></li>
+                <li class="nav-item"><a href="SUCURSALES.html" class="nav-link text-white">Sucursales</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Envios</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL (exactamente igual a tu estructura) -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- BARRA IZQUIERDA (tu imagen) -->
+            <div class="col-md-4 col-lg-3 text-center">
+                <img src="https://i.ibb.co/Q7XjPTzy/imgtorta.jpg" class="img-fluid" style="max-width:250px;">
+            </div>
+            
+            <!-- BARRA DERECHA (tu texto) -->
+            <div class="col-md-8 col-lg-9">
+                <p><span style="color:#FFB6C1; font-size:32px;">¿Que es la Pasteleria Michelline?</span></p>
+                <p style="font-family:Arial;">Pastelería Michelline es una pastelería emblemática en La Paz, Bolivia, fundada en 1988. Ofrece una variedad de delicias como tortas, masas dulces y saladas, galletas y un acogedor servicio de cafetería.</p>
+                
+                <p><span style="color:#FFB6C1; font-size:24px;">Ven a disfrutar con amigos y familia nuestros deliciosos pasteles</span></p>
+                
+                <p style="font-family:Arial;">
+                    - Tortas personalizadas para ocasiones especiales, como el Día de la Madre<br>
+                    - Masas dulces y saladas<br>
+                    - Galletas<br>
+                    - Café y otros bebidas<br>
+                    - Degustaciones gratuitas en sus sucursales
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA (original) -->
+    <div class="bg-rosa text-white text-center py-2 mt-4">
+        Pastelería Michelline.com Derechos Reservados 2025
+    </div>
+
+</div>
+
+<!-- BOTÓN FLOTANTE DE REDES (SIMPLE) -->
+<div style="position:fixed; bottom:20px; right:20px; z-index:1000;">
+    <div class="social-btn" onclick="document.getElementById('redes').classList.toggle('show')">
+        <i class="fas fa-share-alt"></i>
+    </div>
+    <div id="redes" class="social-menu">
+        <a href="#"><i class="fab fa-whatsapp whatsapp"></i> WhatsApp</a>
+        <a href="#"><i class="fab fa-facebook facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-youtube youtube"></i> YouTube</a>
+    </div>
+</div>
+
+<script>
+    function toggleRedes() {
+        document.getElementById('redes').classList.toggle('show');
+    }
+    // Cerrar al hacer clic fuera
+    window.onclick = function(e) {
+        if (!e.target.closest('.social-btn') && !e.target.closest('#redes')) {
+            document.getElementById('redes').classList.remove('show');
+        }
+    }
+</script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
